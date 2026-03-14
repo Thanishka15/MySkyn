@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>MySkyn</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #F5ECEC, #eef1ff);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top App Bar */
+        .navbar {
+            padding: 20px 40px;
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #7A4A4A;
+        }
+
+        /* Center Container */
+        .container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Card */
+        .card {
+            background: white;
+            padding: 40px;
+            width: 420px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            color: #2d1f1f;
+        } 
+
+        .card p {
+            color: #4A3A3A;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        input[type="file"] {
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .primary-btn {
+            background: #8A5A5A;
+            color: white;
+            margin-bottom: 12px;
+        }
+
+        .primary-btn:hover {
+            background: #8A5A5A;
+        }
+
+        .secondary-btn {
+            background: #eef1ff;
+            color: #8A5A5A;
+            border: 1px solid #d6dcff;
+        }
+
+        .secondary-btn:hover {
+            background: #e0e5ff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- App Name -->
+    <div class="navbar">
+        MySkyn
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="card">
+
+            <h2>Upload Face Image</h2>
+            <p>Scan your skin to get personalized skincare insights</p>
+
+            <form method="POST" action="/scan-face" enctype="multipart/form-data">
+                <input type="file" name="image" accept="image/*" required>
+                <button class="primary-btn" type="submit">Scan Face</button>
+            </form>
+
+            <form action="/ingredients" method="GET">
+                <button class="secondary-btn" type="submit">
+                    Analyze My Product Ingredients
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
