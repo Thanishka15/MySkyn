@@ -150,3 +150,7 @@ The application will start locally and can be accessed through your browser.
 - Evaluating skincare products before purchase
 - Learning about skincare ingredients
 - Making evidence-based skincare decisions
+
+## Disclaimer
+
+MySkyn is intended for educational and informational purposes only. The platform does not provide medical diagnoses and should not replace professional dermatological advice.
