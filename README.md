@@ -45,18 +45,31 @@ MySkyn is an AI-powered skincare platform that helps users understand their skin
 
 ## Tech Stack
 
-### Backend
-- Python
-- Flask
-
 ### Frontend
 - HTML
 - CSS
 - JavaScript
 
-### AI & Image Processing
-- AI-based skin analysis models
-- Ingredient analysis engine
+### Backend
+- Python
+- Flask
+
+### AI Services
+- Microsoft Azure OpenAI
+  - Personalized skincare recommendations
+  - Ingredient analysis and explanations
+  - Routine generation
+
+- Microsoft Azure Computer Vision
+  - Facial image analysis
+  - Skin concern detection
+  - Image processing and interpretation
+
+### Cloud Platform
+- Microsoft Azure
+
+### Storage
+- Local file storage for uploaded images
 
 ### Project Structure
 
