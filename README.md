@@ -150,7 +150,6 @@ The application will start locally and can be accessed through your browser.
 
 - Skin progress tracking over time
 - Product recommendation system
-- AI chatbot for skincare queries
 - User accounts and saved reports
 - Routine reminders and notifications
 - Mobile application support
